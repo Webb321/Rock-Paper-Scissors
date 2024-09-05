@@ -8,8 +8,9 @@ function getComputerChoice() {
 }
 
 function playRound(humanChoice, computerChoice) {
+    let roundResult;
     if (humanChoice === computerChoice) {
-        return 'It\'s a tie!';
+        roundResult = 'It\'s a tie!';
     } else if (humanChoice === 'rock' && computerChoice === 'scissors' ||
         humanChoice === 'paper' && computerChoice === 'rock' ||
         humanChoice === 'scissors' && computerChoice === 'paper') {
